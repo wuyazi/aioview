@@ -8,8 +8,6 @@ aioview
 
 .. code-block:: python
 
-  from aiohttp import web
-
   from aioview.validate import validate_params
   from aioview.validate import StringValidator
   from aioview.validate import EmailValidator
@@ -26,4 +24,4 @@ aioview
       @validate_params(get_params)
       async def get(self, name, params=None):
           text = "Hello, " + name
-          return web.Response(text=text)
+          return self.output(text)
