@@ -2,7 +2,7 @@
 from aioview.validate import validate_params
 from aioview.validate import StringValidator
 from aioview.validate import EmailValidator
-from aioview.base import BaseApi
+from aioview.api import BaseApi
 
 
 class UserApi(BaseApi):
