@@ -25,3 +25,6 @@ class BaseApi(web.View):
                 embed_method = _embed_params(getattr(cls, method))
                 setattr(cls, method, embed_method)
         return super(BaseApi, cls).__new__(cls)
+
+    def output(self, data):
+        return web.Response(text=data)
