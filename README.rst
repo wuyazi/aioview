@@ -25,3 +25,10 @@ aioview
       async def get(self, name, params=None):
           text = "Hello, " + name
           return self.output(text)
+
+启动：
+  python run.py
+
+请求：
+  127.0.0.1:8080/user/asdfsfd?email=asdf@qq.com&ref=asdasdfasdf
+ 
